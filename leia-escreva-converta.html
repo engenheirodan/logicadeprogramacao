@@ -1,0 +1,111 @@
+Variaveis no excel
+A + B = C  (A1+B1) = C1 Excel ja esta configurado para receber as variaveis e trabalhar ate estilo array.
+
+Leia ==> le o programa escrito
+converta ==> converte escrita em numero
+escreva ==> mostra na tela ao usuario final
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EXERCICIOS FIXOS
+************************************************************************
+1.Crie um programa onde subtraia os meus ganhos brutos anuais pelas minhas despesas anuais. Após o calculo, divida pela quantidade de mês que possui 1 anos para que eu possa saber qual foi meu lucro em media por mês.
+
+bruto = parseInt(prompt("Digite seu ganho bruto anual"));
+despesa = parseInt(prompt("Digite a despesa anual"));
+calculo = bruto + despesa
+media = (calculo / 12);
+
+alert(media.toFixed(2));
+************************************************************************
+2.Crie um programa que calcule o valor de uma quantidade x de laranjas sabendo que cada unidade custa 0.30 centavos.
+
+comprou = parseInt(prompt("Digite a quantidade de laranjas que você comprou"));
+unidade = 0.30
+total = (comprou * unidade);
+
+alert(total.toFixed(2));
+
+Nunca deixe de praticar. Segue mais 5 exercícios de fixação:
+************************************************************************
+1.Escreva um algoritmo que armazene o valor 10 em uma variável A e o valor 20 em uma variável B. A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos fazendo com que o valor que está em A passe para B e vice-versa. Ao final, escrever os valores que ficaram armazenados nas variáveis.
+
+A = 10;
+B = 20;
+C = null;
+
+C = B;
+B = A;
+A = C;
+C = null;
+
+
+alert(A);
+alert(B);
+alert(C);
+
+
+
+
+
+
+2.Calcular a média final dos alunos da 3ª Série. Os alunos realizarão quatro provas: P1, P2, P3 e P4.
+
+P1 = 90;
+P2 = 100;
+P3 = 70;
+P4 = 90;
+
+P = (P1 + P2 + P3 + P4) / 4
+alert(P);
+
+3.Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor.
+
+valor = parseInt(prompt("Digite um numero e olhe a magica"));
+deps = valor - 1;
+
+alert("olhe, eu trouxe o seu antecessor " + " " + deps);
+
+
+4.Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
+
+var idade = parseInt(prompt("Digite sua idade"));
+dias = idade * 354 * 30
+
+alert(dias + " dias de vida");
+
+
+
+5.Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
+
+brancos = 10000;
+nulos = 50000;
+validos = 70000;
+
+total = brancos + nulos + validos
+
+porcbrancos = (100 * brancos) / total;
+porcnulos = (100 * nulos) / total;
+porcvalidos = (100 * validos) / total;
+
+alert("Total de Votos " + " " + total);
+alert("Total de Votos Brancos " + " " + porcbrancos.toFixed(2) + "%");
+alert("Total de Votos Nulos " + " " + porcnulos.toFixed(2) + "%");
+alert("Total de Votos Validos " + " " + porcvalidos.toFixed(2) + "%");
