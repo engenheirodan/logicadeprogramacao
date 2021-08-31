@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos Formulario</title>
+	<meta charset="utf-8">
+</head>
+<script type="text/javascript">
+//onfocus ele é aplicado quando o elemento ganha o foco ou seja toda vez que entra ele aciona
+//onblur quando o elemento perde o foco
+//onchange sempre que o estado é alterafdo ele dispara o evento
+</script>
+<body>
+<input onfocus="console.log('teste')" type="text" name="">
+<input onblur="console.log('teste')" type="text" name="">
+
+<select onchange="alert('voce alterou o estado')">
+	<option>-- Selecione --</option>
+	<option value="1">Primeira Opção</option>
+	<option value="2">Segunda Opção</option>
+</select>
+</body>
+</html>

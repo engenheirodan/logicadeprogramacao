@@ -1,0 +1,117 @@
+São as possibilidades de se chegar a um resultado diferente
+se         ==> if
+se não     ==> else
+se não se  ==> elseif
+
+Maria 
+se for beber ==> vai ficar bebada
+se não for salão ==> vai ficar bonita
+se não se trabalho ==> vai ganhar dinheiro
+
+debugger // leitura e passo a passo para verificar erro no seu codigo fonte
+horario = prompt("Digite o horário que você acordou:")
+if(horario == "05:00"){
+	alert("Parabéns você está acordado")
+}
+else{
+	alert("Infelizmente você perdeu esta aula")
+}
+
+
+
+debugger // leitura e passo a passo para verificar erro no seu codigo fonte
+horario = prompt("Digite o horário que você acordou:")
+if(horario == "05:00"){
+	alert("Parabéns você está acordado")
+}
+else if(horario == "05:30"){
+	alert("vixi você está atrasado a aula ja começou")
+}
+else {
+alert("você perdeu a aula zé")
+}
+
+Na aula de hoje nós exercitamos as estruturas condicionais If-Else.
+
+1. Meu cliente que fazer seu fluxo de caixa pessoal. Sabendo que ele recebe todo dia 15 e dia 30 de cada mês seus gastos são:
+
+Aguá - 40,00
+
+Luz - 50,00
+
+Internet -  80,00
+
+Cursos - 97,00
+
+Mercado - 800,00
+
+Aluguel -  1200,00
+
+1.Faça o calculo que peça os valores que ele recebeu durante o mês e subtraia pelos seus gastos. Se o valor for positivo escreva: " Parabéns! Vamos investir um pouco". Senão escreva: "Você esta ficando com a conta negativa. Precisa fazer cortes e investir em educação para virar o jogo".
+debugger 
+agua = 80;
+luz = 200;
+internet = 100;
+cursos = 400;
+aluguel = 850;
+mercado = 600;
+despesaspessoais = 800;
+
+ganho30 = parseInt(prompt("Qual seu salario do dia 30"));
+ganho15 = parseInt(prompt("Qual seu salario do dia 15"));
+
+
+ganhototal = ganho30 + ganho15
+despesatotal = agua + luz + internet + cursos + aluguel + mercado + despesaspessoais
+
+media =  ganhototal - despesatotal
+
+
+if(media >= 0 && media <= 100){
+	alert("Parabéns você esta com a conta positiva: " + "R$" + media.toFixed(2));
+}
+else if(media > 100){
+	alert("vamos investir: " +  "R$" + media.toFixed(2));
+}
+else {
+alert("conta negativa né zé: " +  "R$" + media.toFixed(2));
+}
+
+
+
+2. Agora, com base no exercício acima, se o valor for positivo, escreva ao usuário que 30% desse valor será investido e a sobra irá para sua diversão.
+
+agua = 80;
+luz = 200;
+internet = 100;
+cursos = 400;
+aluguel = 850;
+mercado = 600;
+despesaspessoais = 800;
+
+ganho30 = parseInt(prompt("Qual seu salario do dia 30"));
+ganho15 = parseInt(prompt("Qual seu salario do dia 15"));
+
+
+ganhototal = ganho30 + ganho15
+despesatotal = agua + luz + internet + cursos + aluguel + mercado + despesaspessoais
+
+media =  ganhototal - despesatotal
+
+
+if(media >= 0 && media <= 98){
+	alert("Parabéns você esta com a conta positiva: " + "R$" + media.toFixed(2));
+}
+else if(media > 98){
+investir = media * 0.30;
+sobrou = media - investir;
+
+alert("Investir R$" + investir.toFixed(2) + " e sobra pra curti a vida o valor de R$" + sobrou.toFixed(2));
+
+
+}
+else {
+alert("conta negativa né zé: " +  "R$" + media.toFixed(2));
+}
+
+

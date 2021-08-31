@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos em Mouse</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	#novo{
+background: cyan; height: 150px; width: 150px;
+	}
+    #novo2{
+background: red; height: 150px; width: 150px;
+	}
+#teste{
+background: yellow; height: 150px; width: 150px;	
+}
+#black{
+background: black; height: 150px; width: 150px;	
+}
+
+
+
+</style>
+<script type="text/javascript">
+//evento onclicl é acionado quando o evento é cliclado.	
+function acao(){
+alert('Onclick usado quando o elemento é clicado');
+}
+
+//evento ondblclick quando receber dois cliques sequenciais
+function clique2() {
+document.getElementById('novo').style.backgroundColor = 'red';
+}
+//evento onmouseup é disparado quando um clique em determinado elemento é liberado
+function suas(){
+document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+}
+//evento onmouseover é disparado quando um clique em determinado elemento é liberado
+function teste(){
+document.getElementsByTagName("BODY")[0].style.backgroundColor = "pink";
+}
+//evento onmouseout é disparado quando o cursor do mouse sai da area do elemento
+function black(){
+alert('ei vc esqueceu de colocar seu login');
+}
+function cheguei(){
+	alert("ola cheguei");
+}
+function sai(){
+	alert("to saindo");
+}
+function ta(){
+	alert("pressionado");
+}
+
+
+
+
+</script>
+<body>
+	<div onclick="acao()" style="background: #2383c5; height: 150px; width: 150px;"></div><br><br>
+	<div id="novo" ondblclick="clique2()"></div><br><br>
+	<div id="novo2" onmouseup="suas()"></div><br><br>
+	<div id="teste" onmouseover="teste()"></div><br><br>
+	<div id="black" onmouseout="black()"></div><br><br>
+	<div id="black" onmouseout="sai()" onmouseover="cheguei()" ></div><br><br>
+	<div id="black" onmousedown="ta()" ></div><br><br>
+ 
+
+</body>
+</html>

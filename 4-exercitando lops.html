@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loops</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	
+/*Faça um programa que solicite o nome de 3 clientes e 3 valores para cada cliente. Após capturar os valores,  faça a media do valor total. 
+
+a. se​ media >= 100, mostrar "Parabéns, sua média é maior que 100".
+
+b. se​ media >= 50  &&  media < 100, mostrar "Muito bem, você esta na media, vamos melhorar".
+
+c. se​ media >= 20  &&  media < 50​, mostrar "É, você precisa melhorar estamos aqui para te ajudar." 
+
+c. se​ media < 20, mostrar "Cara, realmente é isso que você deseja? "
+*/
+
+
+
+var clienteA = prompt("Nome do cliente 1");
+let sexo = prompt(clienteA + " digite o seu sexo 1\nM para masculino\nF para feminino");
+s_sexo = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+let sexo_mostra = (s_sexo == "M" ? "do" : "da")
+let valorA = Number(prompt("Digite o valor " + sexo_mostra + " " + clienteA));
+var clienteB = prompt("Nome do cliente 2");
+var valorB = parseInt(prompt(clienteB + " por favor, digite o seu valor"));
+var clienteC = prompt("Nome do cliente 3");
+var valorC = parseInt(prompt(clienteC + " por favor, digite o seu valor"));
+
+media = (valorA + valorB + valorC) / 3;
+
+if(media >= 100){
+	alert("Parabéns, sua média é maior que 100");
+}else if (media >=50 && media < 100) {
+	alert("Muito bem, você esta na media, vamos melhorar");
+
+}else if (media >=20 && media < 50) {
+	alert("É, você precisa melhorar estamos aqui para te ajudar");
+}else{
+	alert("Cara, realmente é isso que você deseja?");
+}
+
+
+
+
+</script>
+</body>
+</html>

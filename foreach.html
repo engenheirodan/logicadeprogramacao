@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+
+  <script>
+    // var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+    var listaFuncionarios = Array()
+    listaFuncionarios['x'] = 'Viviane'
+    listaFuncionarios[false] = 'Rosângela'
+    listaFuncionarios[3] = 'Miguel'
+    listaFuncionarios[27] = 'Lucas'
+    listaFuncionarios[-12] = 'Fernanda'
+    //forEach começa a partir de 0 (cuidado!!!)
+
+    var f = function(valor, indice){
+      document.write(valor, indice + '<br>')
+    }
+
+    listaFuncionarios.forEach(f)
+    /* listaFuncionarios.forEach(function(valor, indice, array) {
+      //logica
+      console.log('indice ' + indice + ' | valor:' + valor)
+      if(valor === 'Lucas'){
+        array[indice] = 'Um novo valor'
+      }
+      console.log(array)
+    }) */
+    // foreach atua em valores numericos apartir de 0 entao no caso do array com varios indice ele retornou apenas os indices 3 E 27
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
