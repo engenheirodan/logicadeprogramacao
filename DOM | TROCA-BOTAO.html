@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id01">Old Heading</h1>
+
+<script>
+function trocar() {
+ if(document.querySelector('button').classList.contains('preto')){
+   document.querySelector('button').classList.remove('preto');
+   document.querySelector('button').classList.add('vermelho');
+} else {
+document.querySelector('button').classList.remove('vermelho');
+document.querySelector('button').classList.add('preto');
+}
+}
+
+
+
+
+</script>
+<style>
+.preto {
+background-color: #000;
+color: #fff;
+}
+.vermelho {
+background-color: red;
+color: #000;
+}
+
+</style>
+<button class="preto" onclick="trocar()">JavaScript changed "Old Heading" to "New Heading".</button>
+
+</body>
+</html> 
