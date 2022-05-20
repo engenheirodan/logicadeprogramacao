@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+  <style>
+    /*=======>   PADRÃO <===========*/
+    .estilo1 {
+      background: #FF0000;
+      color: #FFF;
+      width: 300px;
+      height: 300px;
+    }
+    /*=======>   PASSA MOUSE EM CIMA <===========*/
+    .estilo2 {
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+    
+    }
+    /*=======>   Quando Sai o mouse da area <===========*/
+    .estilo3 {
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+      
+    }
+     /*=======>  Quando Pressionado <===========*/
+    .estilo4 {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+      
+    }
+      /*=======>  Quando clica 2x <===========*/
+    .estilo5 {
+      width: 300px;
+      height: 300px;
+      background-color: cyan;
+      
+    }
+    /*=======>  Quando clicado <===========*/
+    .estilo6 {
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      
+    }
+  </style>
+  <script>
+    function modificaClasse() {
+      document.getElementById('mensagem').className = 'estilo2'
+    }
+    function sai() {
+      document.getElementById('mensagem').className = 'estilo3'
+    }
+    function ta() {
+      document.getElementById('mensagem').className = 'estilo4'
+    }
+    function clique2() {
+      document.getElementById('mensagem').className = 'estilo5'
+    }
+    function acao(){
+      document.getElementById('mensagem').className = 'estilo6'
+    }
+  </script>
+
+</head>
+
+<body>
+  <div id="mensagem" class="estilo1" onmouseover="modificaClasse()" onmouseout="sai()" onmousedown="ta()" ondblclick="clique2()" onclick="acao()">Modificando a classe do elemento</div>
+
+
+  
+</body>
+
+</html>
