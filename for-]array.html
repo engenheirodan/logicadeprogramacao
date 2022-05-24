@@ -1,0 +1,30 @@
+
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h2>Lista de Carros Dinâmica</h2>
+<div id="demo"></div>
+<script>
+
+let carros = ['Palio', 'Gol', 'Celta', 'Uno', 'Fiesta', 'fiat-147'];
+
+let html = '<ul>';
+
+for(let i in carros){
+  html += '<li>' + carros[i] + '</li>';
+}
+
+html += '</ul>';
+
+document.getElementById("demo").innerHTML = html;
+
+
+</script>
+
+</body>
+</html>
