@@ -8,3 +8,15 @@ const cars = [
 cars.sort((a, b) => b.year - a.year);
 
 console.log(cars);
+
+//para saber se existe algum indice no array no caso o exemplo usado foi uma laranja
+
+let frutas = ["Banana","Laranja","Maça","pera"]
+if(frutas.includes(frut = "Laranja")){
+    console.log(`Tem: ${frut} Sim`)
+
+}else{
+    console.log(`Não tem: ${frut}`)
+}
+
+
